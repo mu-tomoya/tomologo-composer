@@ -1,0 +1,82 @@
+{
+  "name": "roots/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress boilerplate with Composer, easier configuration, and an improved folder structure",
+  "homepage": "https://roots.io/bedrock/",
+  "author": "tomoya",
+  "keywords": [
+    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+            "type": "package",
+            "package": {
+                "name": "koodimonni-plugin-language/jetpack-fr_fr",
+                "type": "wordpress-language",
+                "version": "3.9.2",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://downloads.wordpress.org/translation/plugin/jetpack/3.9.2/fr_FR.zip",
+                    "reference": "master"
+                }
+            }
+        }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "composer/installers": "^2.1",
+    "vlucas/phpdotenv": "^5.4",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/bedrock-disallow-indexing": "^2.0",
+    "roots/wordpress": "*",
+    "roots/wp-config": "^1.0.0",
+    "roots/wp-password-bcrypt": "^1.1.0",
+    "wpackagist-plugin/ewww-image-optimizer": "*",
+    "wpackagist-plugin/instant-images": "*",
+    "wpackagist-plugin/wp-multibyte-patch": "*",
+    "wpackagist-plugin/siteguard": "*",
+    "wpackagist-plugin/amazon-s3-and-cloudfront": "*",
+    "wpackagist-plugin/wp-migrate-db": "*",
+    "koodimonni/composer-dropin-installer": "*",
+    "koodimonni-plugin-language/jetpack-fr_fr": "^3.9"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true,
+      "koodimonni/composer-dropin-installer": false
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp",
+    "dropin-paths": {
+        "web/app/languages/": ["vendor:koodimonni-language"],
+        "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+        "web/app/languages/themes/": ["vendor:koodimonni-theme-language"]
+      }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "test": [
+      "phpcs"
+    ]
+  }
+}

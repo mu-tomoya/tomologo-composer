@@ -5,7 +5,6 @@ config
 vendor
 web
 .env
-composer.json
 LICENSE.md
 phpcs.xml
 wp-cli.yml
