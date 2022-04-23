@@ -1,0 +1,12 @@
+!.gitignore
+!composer.lock
+!.github/*
+config
+vendor
+web
+.env
+composer.json
+LICENSE.md
+phpcs.xml
+wp-cli.yml
+README.md
