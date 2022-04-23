@@ -23,7 +23,7 @@ jobs:
       # SSH rsync実行
       - name: Deploy
         run: rsync -avzc -e  "ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" ./  ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/usr/share/nginx/bedrock/
-        
+ 
       # composer 実行
       - name : Composer
-        run: ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }}  ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} cd /usr/share/nginx/bedrock/ && composer install && composer update
+        run: ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }}  ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  cd /usr/share/nginx/bedrock/ && composer install && composer update
