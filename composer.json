@@ -43,9 +43,9 @@
     "wpackagist-plugin/wp-multibyte-patch": "*",
     "wpackagist-plugin/siteguard": "*",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "*",
-    "wpackagist-plugin/wp-migrate-db": "*",
     "koodimonni/composer-dropin-installer": "*",
-    "koodimonni-plugin-language/jetpack-fr_fr": "^3.9"
+    "koodimonni-plugin-language/jetpack-fr_fr": "^3.9",
+    "wpackagist-plugin/disable-json-api": "*"
   },
   "config": {
     "optimize-autoloader": true,

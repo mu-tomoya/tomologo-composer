@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c03a631f2887d87e1998ad73e47a41bb",
+    "content-hash": "af91c164bc004b5b993b09ee05f99e2c",
     "packages": [
         {
             "name": "composer/installers",
@@ -1131,6 +1131,24 @@
             "homepage": "https://wordpress.org/plugins/amazon-s3-and-cloudfront/"
         },
         {
+            "name": "wpackagist-plugin/disable-json-api",
+            "version": "1.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/disable-json-api/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/disable-json-api.zip?timestamp=1627523911"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/disable-json-api/"
+        },
+        {
             "name": "wpackagist-plugin/ewww-image-optimizer",
             "version": "6.5.0",
             "source": {
@@ -1183,24 +1201,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/siteguard/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-migrate-db",
-            "version": "2.3.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-migrate-db/",
-                "reference": "tags/2.3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.2.3.0.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-migrate-db/"
         },
         {
             "name": "wpackagist-plugin/wp-multibyte-patch",
