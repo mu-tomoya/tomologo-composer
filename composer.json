@@ -41,11 +41,11 @@
     "wpackagist-plugin/ewww-image-optimizer": "*",
     "wpackagist-plugin/instant-images": "*",
     "wpackagist-plugin/wp-multibyte-patch": "*",
-    "wpackagist-plugin/siteguard": "*",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "*",
     "koodimonni/composer-dropin-installer": "*",
     "koodimonni-plugin-language/jetpack-fr_fr": "^3.9",
-    "wpackagist-plugin/disable-json-api": "*"
+    "wpackagist-plugin/disable-json-api": "*",
+    "wpackagist-plugin/all-in-one-seo-pack": "*"
   },
   "config": {
     "optimize-autoloader": true,

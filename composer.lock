@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af91c164bc004b5b993b09ee05f99e2c",
+    "content-hash": "5ce6dd7f772deeda01aa1b49e9b59a32",
     "packages": [
         {
             "name": "composer/installers",
@@ -1113,6 +1113,24 @@
             "time": "2021-12-12T23:22:04+00:00"
         },
         {
+            "name": "wpackagist-plugin/all-in-one-seo-pack",
+            "version": "4.2.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/all-in-one-seo-pack/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip?timestamp=1650975591"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/"
+        },
+        {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
             "version": "2.6.2",
             "source": {
@@ -1183,24 +1201,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/instant-images/"
-        },
-        {
-            "name": "wpackagist-plugin/siteguard",
-            "version": "1.6.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/siteguard/",
-                "reference": "tags/1.6.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/siteguard.1.6.1.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/siteguard/"
         },
         {
             "name": "wpackagist-plugin/wp-multibyte-patch",
