@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ce6dd7f772deeda01aa1b49e9b59a32",
+    "content-hash": "ab19d426e9abe05fb0a84db0be824e21",
     "packages": [
         {
             "name": "composer/installers",
@@ -213,11 +213,11 @@
             "time": "2021-11-21T21:41:47+00:00"
         },
         {
-            "name": "koodimonni-plugin-language/jetpack-fr_fr",
-            "version": "3.9.2",
+            "name": "koodimonni-plugin-language/jetpack-ja",
+            "version": "10.8",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/jetpack/3.9.2/fr_FR.zip",
+                "url": "https://downloads.wordpress.org/translation/plugin/jetpack/10.8/ja.zip",
                 "reference": "master"
             },
             "type": "wordpress-language"
@@ -1113,24 +1113,6 @@
             "time": "2021-12-12T23:22:04+00:00"
         },
         {
-            "name": "wpackagist-plugin/all-in-one-seo-pack",
-            "version": "4.2.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/all-in-one-seo-pack/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip?timestamp=1650975591"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/"
-        },
-        {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
             "version": "2.6.2",
             "source": {
@@ -1168,15 +1150,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "6.5.0",
+            "version": "6.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/6.5.0"
+                "reference": "tags/6.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.5.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.6.5.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

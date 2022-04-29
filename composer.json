@@ -15,18 +15,27 @@
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
     },
     {
-            "type": "package",
-            "package": {
-                "name": "koodimonni-plugin-language/jetpack-fr_fr",
-                "type": "wordpress-language",
-                "version": "3.9.2",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://downloads.wordpress.org/translation/plugin/jetpack/3.9.2/fr_FR.zip",
-                    "reference": "master"
-                }
-            }
+      "type": "composer",
+      "url": "https://wp-languages.github.io",
+      "only": [
+        "koodimonni-language/*",
+        "koodimonni-plugin-language/*",
+        "koodimonni-theme-language/*"
+      ]
+    },
+    {
+      "type":"package",
+      "package": {
+        "name":"koodimonni-plugin-language/jetpack-ja",
+        "type":"wordpress-language",
+        "version": "10.8",
+        "dist": {
+          "type":"zip",
+          "url":"https://downloads.wordpress.org/translation/plugin/jetpack/10.8/ja.zip",
+          "reference": "master"
         }
+      }
+    }
   ],
   "require": {
     "php": ">=8.0",
@@ -38,14 +47,13 @@
     "roots/wordpress": "*",
     "roots/wp-config": "^1.0.0",
     "roots/wp-password-bcrypt": "^1.1.0",
+    "koodimonni/composer-dropin-installer": "*",
     "wpackagist-plugin/ewww-image-optimizer": "*",
     "wpackagist-plugin/instant-images": "*",
     "wpackagist-plugin/wp-multibyte-patch": "*",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "*",
-    "koodimonni/composer-dropin-installer": "*",
-    "koodimonni-plugin-language/jetpack-fr_fr": "^3.9",
     "wpackagist-plugin/disable-json-api": "*",
-    "wpackagist-plugin/all-in-one-seo-pack": "*"
+    "koodimonni-plugin-language/jetpack-ja": "^10.8"
   },
   "config": {
     "optimize-autoloader": true,
@@ -53,7 +61,7 @@
     "allow-plugins": {
       "composer/installers": true,
       "roots/wordpress-core-installer": true,
-      "koodimonni/composer-dropin-installer": false
+      "koodimonni/composer-dropin-installer": true 
     }
   },
   "minimum-stability": "dev",
